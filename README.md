@@ -20,4 +20,4 @@
 * [ ] Vagrant
 * [ ] VirtualBox
 * [ ] Docker (soon...)
-
+* [ ] MySQL (latest)
