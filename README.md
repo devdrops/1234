@@ -6,10 +6,10 @@
 
 #### PHP Tools
 
-* [ ] PHP 7 (latest) and PHP-FPM (latest)
-* [ ] Composer (latest)
+* [X] PHP 7 (latest) and PHP-FPM (latest)
+* [X] Composer (latest)
 * [ ] Xdebug (latest)
-* [ ] PHPUnit (latest)
+* [X] PHPUnit (latest)
 
 ### Environment Tools
 
@@ -17,7 +17,7 @@
 
 ### External Tools
 
-* [ ] Vagrant
+* [X] Vagrant
 * [ ] VirtualBox
 * [ ] Docker (soon...)
-* [ ] MySQL (latest)
+* [X] MySQL (latest)
