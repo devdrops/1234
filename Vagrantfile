@@ -12,6 +12,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "./provision/system.sh"
   config.vm.provision "shell", path: "./provision/php.sh"
   config.vm.provision "shell", path: "./provision/nginx.sh"
+  config.vm.provision "shell", path: "./provision/mysql.sh"
   config.vm.provision "shell", path: "./provision/xdebug.sh"
   config.vm.provision "shell", path: "./provision/composer.sh", run: "always"
   config.vm.provision "shell", path: "./provision/phpunit.sh"

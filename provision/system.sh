@@ -1,13 +1,19 @@
 #! /bin/bash
 
 echo " "
-echo " ----- INSTALLING SYSTEM REQUIREMENTS ----- "
+echo "====================================================================================="
+echo "PROVISIONING: System Requirements - Start"
+echo "====================================================================================="
 echo " "
 
-echo " > vim, cURL, wget, zip, unzip, build-essential, python-software-properties, git language-pack-en-base"
+echo " > Installing..."
+sudo apt-get update -y > /dev/null 2>&1
+
 sudo apt-get -y install vim curl wget zip unzip build-essential python-software-properties git language-pack-en-base > /dev/null 2>&1
-sudo apt-get -qq update
+sudo apt-get -qq update > /dev/null 2>&1
 
 echo " "
-echo " ----- INSTALLING SYSTEM REQUIREMENTS: DONE! ----- "
+echo "====================================================================================="
+echo "PROVISIONING: System Requirements - Finished"
+echo "====================================================================================="
 echo " "

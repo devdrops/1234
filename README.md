@@ -6,9 +6,9 @@
 
 #### PHP Tools
 
-* [X] PHP 7 (latest) and PHP-FPM (latest)
+* [X] PHP 7.0.* (latest) and PHP-FPM (latest)
 * [X] Composer (latest)
-* [X] Xdebug (latest)
+* [X] Xdebug (latest supported by PHP 7)
 * [X] PHPUnit (latest)
 
 ### Environment Tools

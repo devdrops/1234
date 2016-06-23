@@ -1,13 +1,20 @@
 #! /bin/bash
 
 echo " "
-echo " ----- INSTALLING XDEBUG ----- "
+echo "====================================================================================="
+echo "PROVISIONING: Xdebug - Start"
+echo "====================================================================================="
 echo " "
 
-echo " > sudo apt-get install php-xdebug -y"
-sudo apt-get install php-xdebug -y
+echo " > Installing..."
+sudo apt-get install -y php-xdebug
+
+echo " "
+echo " > Results:"
 php -v
 
 echo " "
-echo " ----- INSTALLING XDEBUG: DONE! ----- "
+echo "====================================================================================="
+echo "PROVISIONING: Xdebug - Finished"
+echo "====================================================================================="
 echo " "
