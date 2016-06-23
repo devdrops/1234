@@ -1,6 +1,6 @@
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = 'ubuntu/trusty64'
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.network :forwarded_port, guest: 8081, host: 8081
@@ -12,7 +12,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "./provision/system.sh"
   config.vm.provision "shell", path: "./provision/php.sh"
   config.vm.provision "shell", path: "./provision/nginx.sh"
-  config.vm.provision "shell", path: "./provision/mysql.sh"
   config.vm.provision "shell", path: "./provision/xdebug.sh"
   config.vm.provision "shell", path: "./provision/composer.sh", run: "always"
   config.vm.provision "shell", path: "./provision/phpunit.sh"

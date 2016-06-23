@@ -5,10 +5,11 @@ echo " ----- INSTALLING PHP REQUIREMENTS ----- "
 echo " "
 
 sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
-apt-get -qq update
-sudo apt-get purge php5-common -y
-sudo apt-get -y install php7.0 php7.0-curl > /dev/null 2>&1
-sudo apt-get -y --purge autoremove
+sudo apt-get update -y
+sudo apt-cache search php7
+sudo apt-get -y install php7.0 php7.0-common php7.0-curl php7.0-json php7.0-mysql php7.0-xml php7.0-cli > /dev/null 2>&1
+
+php -v
 
 echo " "
 echo " ----- INSTALLING PHP REQUIREMENTS: DONE! ----- "
